@@ -1,0 +1,109 @@
+{
+  "name": "akbar",
+  "version": "1.0.4",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@capacitor/android": "^2.4.7",
+    "@capacitor/cli": "^2.4.7",
+    "@capacitor/core": "^2.4.7",
+    "@capacitor/ios": "2.4.7",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "bootstrap-v4-rtl": "^4.6.0-2",
+    "browser-image-compression": "^1.0.14",
+    "capacitor-resources": "^2.0.5",
+    "clsx": "^1.1.1",
+    "i18next": "^19.9.2",
+    "jalali-moment": "^3.3.10",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.14.1",
+    "react": "^16.14.0",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "^16.14.0",
+    "react-i18next": "^11.8.12",
+    "react-id-swiper": "^3.0.0",
+    "react-infinite-scroller": "^1.2.4",
+    "react-loading": "^2.0.3",
+    "react-quill": "^1.3.5",
+    "react-redux": "^7.2.3",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.4",
+    "react-toastify": "^7.0.3",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "shards-react": "^1.0.3",
+    "swiper": "^5.4.5"
+  },
+  "devDependencies": {
+    "@craco/craco": "5.9.0",
+    "dotenv": "^8.2.0",
+    "eslint": "v6.8.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "ftp-deploy": "^2.4.1",
+    "prettier": "^2.2.1",
+    "redux-logger": "^3.0.6"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "HOST_TYPE=nonprod craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "deploy": "node deploy",
+    "build:d": "yarn build && yarn deploy",
+    "build:cap": "yarn build && cap copy"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "prettier"
+    ],
+    "root": true,
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "plugins": [
+      "prettier",
+      "react",
+      "react-hooks"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "import/no-anonymous-default-export": 0,
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "never"
+        }
+      ]
+    }
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "jsxBracketSameLine": true,
+    "trailingComma": "es5",
+    "printWidth": 80,
+    "semi": true
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
